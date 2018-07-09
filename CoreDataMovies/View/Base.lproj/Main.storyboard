@@ -14,7 +14,7 @@
         <!--My Movies-->
         <scene sceneID="dKs-9B-ige">
             <objects>
-                <tableViewController id="uaN-x8-38s" sceneMemberID="viewController">
+                <tableViewController id="uaN-x8-38s" customClass="MovieTableViewController" customModule="CoreDataMovies" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Taa-0l-Fzs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,7 +103,7 @@
         <!--Movie Detail-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreDataMovies" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DetailViewController" customModule="CoreDataMovies" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -152,8 +152,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Movie Detail" id="D8p-gB-wNn">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="yEz-yu-fjW"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="yEz-yu-fjW">
+                            <connections>
+                                <action selector="save:" destination="BYZ-38-t0r" id="EZ3-aO-ocW"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="movieDescription" destination="EIB-mz-tSA" id="eP5-l6-qkk"/>
+                        <outlet property="movieImage" destination="w46-I2-G0j" id="MSx-PW-lv0"/>
+                        <outlet property="movieImageName" destination="ofo-GP-oST" id="7Hn-MN-doR"/>
+                        <outlet property="movieTitle" destination="J1G-SR-cHP" id="FfI-tP-sYe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

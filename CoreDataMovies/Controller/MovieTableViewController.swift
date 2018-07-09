@@ -10,12 +10,12 @@ import UIKit
 
 class MovieTableViewController: UITableViewController {
 
-    var movieDb = Model.sharedInstance.movieDb
     var model = Model.sharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+       
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -34,7 +34,7 @@ class MovieTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return movieDb.count
+        return model.movieDb.count
     }
 
    
@@ -42,7 +42,7 @@ class MovieTableViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "movieCell", for: indexPath)
 
-        let currentMovie = movieDb[indexPath.item]
+        let currentMovie = model.movieDb[indexPath.item]
         
         let thumbnail = cell.viewWithTag(1000) as! UIImageView
         let titleLabel = cell.viewWithTag(1001) as! UILabel
@@ -104,7 +104,7 @@ class MovieTableViewController: UITableViewController {
         {
             if let selectedRow = tableView.indexPathForSelectedRow
             {
-                let movie = movieDb[selectedRow.item]
+                let movie = model.movieDb[selectedRow.item]
                 
                 detailViewController.currentMovie = movie
             }

@@ -22,6 +22,7 @@ class Model
     private init()
     {
         managedContext = appDelegate.persistentContainer.viewContext
+        getMoviesFromCoreData()
     }
     
     func updateDatabase()
