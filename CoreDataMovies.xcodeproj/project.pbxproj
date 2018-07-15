@@ -17,6 +17,7 @@
 		01A6C12320EF0BFE003597E6 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A6C12120EF0BFD003597E6 /* Movie+CoreDataProperties.swift */; };
 		01A6C12520EF0CDF003597E6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A6C12420EF0CDF003597E6 /* Model.swift */; };
 		01A6C12720F1EC28003597E6 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A6C12620F1EC28003597E6 /* MovieTableViewController.swift */; };
+		01A9186720FB08660004954B /* MovieDBNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A9186620FB08660004954B /* MovieDBNetworkRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		01A6C12120EF0BFD003597E6 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		01A6C12420EF0CDF003597E6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		01A6C12620F1EC28003597E6 /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
+		01A9186620FB08660004954B /* MovieDBNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDBNetworkRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				01A6C12020EF0BFD003597E6 /* Movie+CoreDataClass.swift */,
 				01A6C12120EF0BFD003597E6 /* Movie+CoreDataProperties.swift */,
 				01A6C12420EF0CDF003597E6 /* Model.swift */,
+				01A9186620FB08660004954B /* MovieDBNetworkRequest.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				01A6C10B20EEED96003597E6 /* DetailViewController.swift in Sources */,
 				01A6C10920EEED96003597E6 /* AppDelegate.swift in Sources */,
 				01A6C12720F1EC28003597E6 /* MovieTableViewController.swift in Sources */,
+				01A9186720FB08660004954B /* MovieDBNetworkRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

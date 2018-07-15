@@ -38,6 +38,9 @@ class DetailViewController: UIViewController {
             movieImageName.text = movie.movieImageName
             movieDescription.text = movie.movieDescription
         }
+        
+        let modelNetworkRequest = MovieDBNetworkRequest()
+        modelNetworkRequest.fetchMovies(withTitle: "Man of Steel")
     }
 
     override func didReceiveMemoryWarning() {
